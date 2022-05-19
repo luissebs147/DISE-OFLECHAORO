@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Flecha Oro</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+    <style>
+p{
+color:black;
+        }
+</style>
+    
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">Diseño Flecha Oro</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tipografia.html">Tipografía</a></li>
+        <li><a href="iconos.html">Iconos</a></li>
+        <li><a href="cartel.html">Cartel</a></li>
+        <li><a href="editorial.html">Editorial</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner"></div>
+  <div class="about">
+ <div class="content">
+      <div class="title">¡Hola, somos Eileen y Sebastián! Tus proximos diseñadores de confianza.</div>
+      <p>Somos dos estudiantes de la licenciatura en Diseño de la Comunicación Gráfica, actualmente estamos cursando el sexto trimestre de la carrera, a pesar de ser estudiantes, contamos con las herramientas necesarias para poder solucionar tus problemas de manera creativa.</p>
+      <p>Estamos especializados actualmente en campos que abarcan desde tipografía y cartel.Somos fans. Fans de crear, de innovar, de cautivar, de lo que somos y de lo que hacemos. Nuestro weirdness nos lleva a pensar siempre en generar vínculos emocionales entre marcas y usuarios que conviertan a sus clientes en fans.</p>
+     
+     &nbsp;&nbsp; 
+          &nbsp;&nbsp;
+     
+     <div class="title">¿Qué es Diseño Flecha Oro?</div>
+      <p>Somos un estudio caracterizado por su enfoque universal del Diseño y la Creatividad, nuestra informalidad,  falta de institucionalidad convencional, y  seriedad. Una combinación de intimidad, espontaneidad, vanguardia y seriedad, alto nivel y compromiso. Hagamos algo nuevo, profundo y relevante para su contexto y cultura.</p>
+      
+   
+    </div>
+  </div>
+
+    
+<div style =" text-align: center "> 
+    <h1>¡Conocenos mejor, escucha esta playlist!</h1>  
+    <h4>Tus diseñadores de confianza escuchan el soundtrack de Heartstopper</h4>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3fzkmKLHepnXodtdOsD0CP?utm_source=generator" width="60%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    
+      <!-- Site footer -->
+     <footer class="section footer-minimal context-dark">
+        <div class="container wow-outer">
+          <div class="wow fadeIn">
+            <div class="row row-50 row-lg-60">
+              <div class="col-12"><a href="index.html"><img src="./images/logotipo.png" alt="" width="207" height="51"/></a></div>
+              <div class="col-12">
+                <ul class="footer-minimal-nav">
+                  <li><a href="contacto.html">Contacto</a></li>
+                  <li><a href="tipografia.html">Tipografía</a></li>
+                  <li><a href="iconos.html">Iconos</a></li>
+                  <li><a href="cartel.html">Cartel</a></li>
+                  <li><a href="editorial.html">Editorial</a></li>
+                </ul>
+              </div>
+              
+            </div>
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Flecha Oro</span><span>.&nbsp;</span><span>All Rights Reserved.</span></p>
+          </div>
+        </div>
+      </footer>
+ 
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+ </div>
+</body>
+</html>

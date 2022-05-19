@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Flecha Oro</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <link rel="icon" href="./images/favicon.jpg" type="image/x-icon">
+    <style>
+p{
+color:black;
+        }
+</style>
+    
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">Diseño Flecha Oro</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tipografia.html">Tipografía</a></li>
+        <li><a href="iconos.html">Iconos</a></li>
+        <li><a href="cartel.html">Cartel</a></li>
+        <li><a href="editorial.html">Editorial</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner"></div>
+  <div class="about">
+ <div class="content">
+      <div class="title">¡Iconos!</div>
+      <p>La iconografía es una de las especialidades del Diseño Gráfico que más disfrutamos, por su proceso de “construcción”. Aunque de un tiempo a esta parte se ha popularizado el uso de iconos en distintos ámbitos (apartados web, datos de contacto, infografías...), su diseño y adecuación es toda una ciencia. Un icono es la representación gráfica de un signo o símbolo que permite optimizar la asimilación de un mensaje en un proceso comunicativo, mediante un elemento gráfico simplificado.</p>
+  
+    
+    </div>
+  </div>
+       
+<div style =" text-align: center "> 
+    <h1>¡Les compartimos un video del proceso que seguimos!</h1>  
+    <h3>Muy cool ¿Verdad?</h3>
+          <br />
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/TF4_T7yMTOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+    
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    
+      <!-- Site footer -->
+     <footer class="section footer-minimal context-dark">
+        <div class="container wow-outer">
+          <div class="wow fadeIn">
+            <div class="row row-50 row-lg-60">
+              <div class="col-12"><a href="index.html"><img src="./images/logotipo.png" alt="" width="207" height="51"/></a></div>
+              <div class="col-12">
+                <ul class="footer-minimal-nav">
+                  <li><a href="contacto.html">Contacto</a></li>
+                  <li><a href="tipografia.html">Tipografía</a></li>
+                  <li><a href="iconos.html">Iconos</a></li>
+                  <li><a href="cartel.html">Cartel</a></li>
+                  <li><a href="editorial.html">Editorial</a></li>
+                </ul>
+              </div>
+              
+            </div>
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Flecha Oro</span><span>.&nbsp;</span><span>All Rights Reserved.</span></p>
+          </div>
+        </div>
+      </footer>
+ 
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

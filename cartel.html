@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Flecha Oro</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <link rel="icon" href="./images/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">Diseño Flecha Oro</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tipografia.html">Tipografía</a></li>
+        <li><a href="iconos.html">Iconos</a></li>
+        <li><a href="cartel.html">Cartel</a></li>
+        <li><a href="editorial.html">Editorial</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner"></div>
+  <div class="about">
+ <div class="content">
+      <div class="title">¡Cartel!</div>
+      <p>El cartel es la comunicación visual de un mensaje expresado gráficamente. El cartel está considerado como un medio publicitario de gran importancia formado por imágenes o textos cuya función es atrapar la atención percibiendo un claro mensaje a modo de “grito en la pared”.</p>
+      <p>Los carteles son uno de los medios publicitarios más antiguos de nuestra historia, pero su poder de persuasión sigue siendo muy eficiente. Un buen cartel sirve tanto para informar como para mantener viva una marca gracias a su impacto. El equipo de Dommia cuenta con profesionales del marketing y de la comunicación con experiencia en diseñar carteles publicitarios y conseguir atraer a nuevos clientes.</p>
+    
+    </div>
+  </div>
+    
+    <div style =" text-align: center "> 
+       <h2>¡Sientete en confianza de pasear por nuestra carpeta en Drive!</h2>
+        <h3>Da click en el enlace de abajo para conocer nuestros trabajos</h3> 
+        
+      &nbsp;&nbsp; 
+        
+<div class="col-12"><a href="https://drive.google.com/drive/folders/1ksVsKxzHv98lblKdTNmRdYAc3gc_Hst_?usp=sharing" target="_blank"><img src="./images/boton.png" alt="" width="207" height="51"/></a></div>
+   &nbsp;&nbsp; 
+          &nbsp;&nbsp; 
+        <script>
+      
+      
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menu = document.querySelector(".menu-list");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      menu.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+      body.classList.add("disabledScroll");
+    }
+    cancelBtn.onclick = ()=>{
+      menu.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      body.classList.remove("disabledScroll");
+    }
+
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+    
+      <!-- Site footer -->
+     <footer class="section footer-minimal context-dark">
+        <div class="container wow-outer">
+          <div class="wow fadeIn">
+            <div class="row row-50 row-lg-60">
+              <div class="col-12"><a href="index.html"><img src="images/logotipo.png" alt="" width="207" height="51"/></a></div>
+              <div class="col-12">
+                <ul class="footer-minimal-nav">
+                  <li><a href="about-us.html">Contacto</a></li>
+                  <li><a href="tipografia.html">Tipografía</a></li>
+                  <li><a href="iconos.html">Iconos</a></li>
+                  <li><a href="cartel.html">Cartel</a></li>
+                  <li><a href="editorial.html">Editorial</a></li>
+                </ul>
+              </div>
+              
+            </div>
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Flecha Oro</span><span>.&nbsp;</span><span>All Rights Reserved.</span></p>
+          </div>
+        </div>
+      </footer>
+ 
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
